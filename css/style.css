@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face { 
+    font-family: "Roboto-Italic";
+    src: url(../fonts/Roboto-Italic.ttf);
+}
+/*HEADER*/
+header{
+    background-color: rgb(206, 240, 248);
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+    padding: 10px 12px;
+    grid-area: header;
+    width: 100%;
+}
+
+header div{
+    width: 100%;
+}
+
+header div nav{
+    display: flex;
+    width: 100%;
+}
+header div nav ul{
+    list-style-type: none;
+    padding-left: 50px;
+    margin-left: 100px;
+}
+header nav ul li{
+display: inline;
+}
+header nav ul li a{/*estilos de la lista*/
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+nav ul li a:hover {
+    color: rgb(182, 141, 53);
+    }
+
+/*INICIA MAIN INDEX Y HOME*/
+main{
+    grid-area: main;
+}
+.cajaCards{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.texto-encima{
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    font-size: 1.5rem;
+}
+.texto-encima1{
+    position: absolute;
+    top: 85%;
+    left: 45%;
+    font-size: 1.5rem; 
+}
+
+.texto-encima2{
+    position: absolute;
+    top: 85%;
+    left: 78%;
+    font-size: 1.5rem; 
+}
+
+
+#subtitulo{
+background-color: rgba(209, 144, 82, 0.411);
+text-align: center;
+margin-top: 3%;
+margin-bottom: 1%;
+font-size: 2rem;
+}
+
+.bbPeluche{
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 90%;
+}
+@font-face { 
+    font-family: "Roboto-Light";
+    src: url(../fonts/Roboto-Light.ttf);
+}
+.h2home{
+font-family: "Roboto-Light";
+text-align: center;
+color: rgb(158, 180, 178);
+font-size: 20px;
+height: 60px;
+margin-top: 1%;
+margin-bottom: 1%;
+padding-top: 10px;
+}
+.imgNenas{ /*seccion Home*/
+margin-right: 180px;
+margin-bottom: 3%;
+margin-top: 2%;
+margin-left: 17px;
+}
+.imgNinos{
+    margin-bottom: 3%;
+    margin-top: 1%;
+}
+/*footer*/
+footer{
+    background-color: rgb(225, 226, 218);
+display: flex;
+width: 100%;
+grid-area: footer;
+}
+footer div{
+    display: inline;
+}
+span{
+margin-bottom: 10px;
+flex-direction: row-reverse;
+width: 90%;
+margin-top: 80px;
+}
+
+/*Main bebes*/
+.portadas{
+    width: 1563px;
+    height: 500px;
+}
+.texto-encima3{
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    font-size: 4.5rem; 
+    font-weight: bold;
+    font-style: italic;
+    background-color: hsl(208, 100%, 97%,0.5);
+    color: rgb(45, 49, 48);
+}
+
+.imgProductosb{
+    width: 100%;
+    margin-right:15px ;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 450px;
+    height: 500px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-color: black;
+    border-style: groove;
+}
+
+.imgProductos{
+    width: 100%;
+    margin-right:15px ;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /*width: 450px;*/
+    height: 500px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-color: black;
+    border-style: groove;
+}
+/*main NIÑAS*/
+
+.texto-encima4{
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    font-size: 4.5rem; 
+    font-weight: bold;
+    font-style: italic;
+    background-color: hsl(208, 100%, 97%,0.5);
+    color: rgb(45, 49, 48);
+}
+
+/*MAIN NIÑOS*/
+.texto-encima5{
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    font-size: 4.5rem; 
+    font-weight: bold;
+    font-style: italic;
+    background-color: hsl(208, 100%, 97%,0.5);
+    color: rgb(45, 49, 48);
+}
+
+/*CONTACTO*/
+.texto-encima6{
+    position: absolute;
+    top: 23%;
+    left: 60%;
+    font-size: 4.5rem; 
+    font-weight: bold;
+    font-style: italic;
+    background-color: hsl(208, 100%, 97%,0.5);
+    color: rgb(45, 49, 48);
+}
+.logo{
+    width: 250px;
+}
+/*Grids sección bebes*/
+
+@media (max-width: 480px){
+    header{
+        background-color: rgb(206, 240, 248);
+    }
+    .logo{
+        width: 50px;
+    }
+        .portadas{
+            width: 400px;
+            height: 200px;
+        }
+        
+        .texto-encima3{
+            position: absolute;
+            top: 49%;
+            left: 80%;
+            font-size: 1rem; 
+            font-weight: bold;
+            font-style: italic;
+            background-color: hsl(208, 100%, 97%,0.5);
+            color: rgb(45, 49, 48);
+        }
+        .imgProductos{
+            margin-right:15px ;
+            margin-left: 15px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            width: 150px;
+            height: 150px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-color: black;
+            border-style: groove;
+        }
+        .logo .a .img{
+            width: 80px;
+            height: 100px;
+        }
+        .texto-encima4{
+            position: absolute;
+            top: 49%;
+            left: 80%;
+            font-size: 1rem; 
+            font-weight: bold;
+            font-style: italic;
+            background-color: hsl(208, 100%, 97%,0.5);
+            color: rgb(45, 49, 48);
+        }
+    }
+
+
+    @media (min-width:481px)and(max-width: 767px){
+        header{
+            background-color: rgb(206, 240, 248);
+        }
+            .portadas{
+                width: 500px;
+                height: 200px;
+            }
+            
+            .texto-encima3{
+                position: absolute;
+                top: 49%;
+                left: 80%;
+                font-size: 1rem; 
+                font-weight: bold;
+                font-style: italic;
+                background-color: hsl(208, 100%, 97%,0.5);
+                color: rgb(45, 49, 48);
+            }
+            .imgProductos{
+                margin-right:15px ;
+                margin-left: 15px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                width: 150px;
+                height: 150px;
+                padding-left: 15px;
+                padding-right: 15px;
+                border-color: black;
+                border-style: groove;
+            }
+            .logo .a .img{
+                width: 80px;
+                height: 100px;
+            }
+            .texto-encima4{
+                position: absolute;
+                top: 49%;
+                left: 80%;
+                font-size: 1rem; 
+                font-weight: bold;
+                font-style: italic;
+                background-color: hsl(208, 100%, 97%,0.5);
+                color: rgb(45, 49, 48);
+    }
