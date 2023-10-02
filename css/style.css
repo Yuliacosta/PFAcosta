@@ -213,9 +213,9 @@ margin-top: 80px;
 }
 /*Grids sección bebes*/
 
-@media (max-width: 480px){
+@media (min-width: 320px) and (max-width: 480px){
     header{
-        background-color: rgb(206, 240, 248);
+        color: blueviolet;
     }
     .logo{
         width: 50px;
@@ -264,9 +264,9 @@ margin-top: 80px;
     }
 
 
-    @media (min-width:481px)and(max-width: 767px){
+    @media (min-width:576px)and(max-width: 991px){
         header{
-            background-color: rgb(206, 240, 248);
+            color: brown;
         }
             .portadas{
                 width: 500px;
@@ -309,3 +309,8 @@ margin-top: 80px;
                 background-color: hsl(208, 100%, 97%,0.5);
                 color: rgb(45, 49, 48);
     }
+}
+
+@media (min-width:1024px){
+
+}
