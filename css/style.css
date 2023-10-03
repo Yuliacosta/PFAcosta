@@ -34,7 +34,7 @@ header div nav ul{
 header nav ul li{
 display: inline;
 }
-header nav ul li a{/*estilos de la lista*/
+header nav ul li a{
     color: black;
     font-weight: bold;
     text-decoration: none;
@@ -46,9 +46,7 @@ nav ul li a:hover {
     }
 
 /*INICIA MAIN INDEX Y HOME*/
-main{
-    grid-area: main;
-}
+
 .cajaCards{
     position: relative;
     display: inline-block;
@@ -217,8 +215,21 @@ margin-top: 80px;
     header{
         color: blueviolet;
     }
-    .logo{
-        width: 50px;
+    header div nav ul{
+        list-style-type: none;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+    header nav ul li a{/*estilos de la lista*/
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        justify-content:center;
+        padding-left: 10px;
+    }
+    header div a .logo{
+        width: 10px;
+
     }
         .portadas{
             width: 400px;
@@ -227,8 +238,8 @@ margin-top: 80px;
         
         .texto-encima3{
             position: absolute;
-            top: 49%;
-            left: 80%;
+            top: 55%;
+            left: 70%;
             font-size: 1rem; 
             font-weight: bold;
             font-style: italic;
@@ -261,6 +272,18 @@ margin-top: 80px;
             background-color: hsl(208, 100%, 97%,0.5);
             color: rgb(45, 49, 48);
         }
+        .bg-body-tertiary {
+            --bs-bg-opacity: 0;
+            background-color: rgba(var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity))!important;
+        }
+        
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: flex-end;
+}
     }
 
 
