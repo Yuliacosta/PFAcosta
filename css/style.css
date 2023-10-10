@@ -9,12 +9,12 @@
 }
 /*HEADER*/
 header{
-    background-color: rgb(206, 240, 248);
+    background-color: rgb(207, 118, 118);
+    border-radius: 15px;
     display: flex;
     justify-content: space-between;
     z-index: 3;
     padding: 10px 12px;
-    grid-area: header;
     width: 100%;
 }
 
@@ -42,8 +42,8 @@ header nav ul li a{
     padding-left: 50px;
 }
 nav ul li a:hover {
-    color: rgb(182, 141, 53);
-    }
+--bs-nav-link-hover-color: rgb(227, 184, 240);
+}
 
 /*INICIA MAIN INDEX Y HOME*/
 
@@ -52,9 +52,7 @@ nav ul li a:hover {
     display: inline-block;
     text-align: center;
 }
-.carousel-inner img{
-    width: ;
-}
+
 .texto-encima{
     position: absolute;
     top: 85%;
@@ -215,16 +213,17 @@ margin-top: 80px;
     width: 250px;
 }
 
-@media (min-width: 320px) and (max-width: 480px){
+@media (min-width: 320px) and (max-width: 767px){
     header{
-        background-color: rgb(206, 240, 248);
+        background-color: rgb(207, 118, 118);
+        border-radius: 15px;
     }
-    nav ul{
+    ul{
         list-style-type: none;
         padding-left: 0px;
         margin-left: 0px;
     }
-    li a{
+    a{
         color: black;
         font-weight: bold;
         text-decoration: none;
@@ -235,6 +234,13 @@ margin-top: 80px;
         width: 90px;
         height: 87px;
     }
+    .bg-body-tertiary {
+        --bs-bg-opacity: 1;}
+    .navbar-nav {
+        --bs-nav-link-color: #040404;
+        font-weight: bold;
+        --bs-nav-link-hover-color: rgb(227, 184, 240);
+}
         .portadas{
             width: 400px;
             height: 200px;
@@ -272,14 +278,7 @@ margin-top: 80px;
             background-color: hsl(208, 100%, 97%,0.5);
             color: rgb(45, 49, 48);
         }
-        .bg-body-tertiary {
-            --bs-bg-opacity: 0;
-            background-color: rgba(var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity))!important;
-        }
         
-        .bg-body-tertiary {
-            --bs-bg-opacity: 0;
-        }
         button.navbar-toggler{
             --bs-navbar-toggler-border-color: 0;
         }
@@ -293,7 +292,7 @@ margin-top: 80px;
             font-size: 1rem;
         }
         .bbPeluche {
-            margin-left: 18px;
+            margin-left: 17px;
         }
 
         .h2home{
@@ -303,22 +302,20 @@ margin-top: 80px;
             margin-top: 0%;
             margin-bottom: 1%;
             padding-top: 2px;
+            color: black;
             }
             .imgNenas {
                 margin-right: 11px;
-                padding: 2px;
-                padding: 2px;
-                margin-bottom: 3%;
-                margin-top: 2%;
-                margin-left: 45px;
+                margin-bottom: 0;
+                margin-top: 0%;
+                margin-left: 22px;
                 width: 150px;
             }
             .imgNinos{
                 margin-right: 24px;
                 padding: 2px;
-                margin-bottom: 3%;
-                margin-top: 2%;
-                margin-left: 24px;
+                margin-bottom: 1%;
+                margin-left: 15px;
                 width: 150px;
             }
             footer div {
@@ -333,13 +330,15 @@ margin-top: 80px;
                 margin-top: 23px;
                 font-size: 12px;
             }
+
 }
 
 
 
-    @media (min-width:576px)and(max-width: 991px){
+    @media (min-width:768px)and(max-width: 1023px){
         header{
-            background-color: brown;
+            background-color: rgb(207, 118, 118);
+            border-radius: 15px;
         }
         header div{
             width: 297px;
@@ -385,6 +384,13 @@ margin-top: 80px;
                 background-color: hsl(208, 100%, 97%,0.5);
                 color: rgb(45, 49, 48);
     }
+    .bg-body-tertiary {
+        --bs-bg-opacity: 1;}
+    .navbar-nav {
+        --bs-nav-link-color: #040404;
+        font-weight: bold;
+        --bs-nav-link-hover-color: rgb(227, 184, 240);
+}
 
 }
 
@@ -392,6 +398,7 @@ margin-top: 80px;
 
     header{
         background-color: rgb(207, 118, 118);
+        border-radius: 15px;
     }
     .logo{
         width: 150px;
@@ -415,40 +422,64 @@ margin-top: 80px;
         text-decoration: none;
         background: 0 0;
         border: 0;
-        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-    }
-    .nav-link :hover {
-        color: rgb(182, 141, 53);
-        }
-    nav{
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;nav{
         display: flex;
         width: 100%;
+        }
     }
     ul{
         list-style-type: none;
         padding-left: 50px;
         margin-left: 100px;
+        margin-bottom: 7rem;
     }
     li{
     display: inline;
+    margin: 10px;
     }
     a{
         color: black;
         font-weight: bold;
         text-decoration: none;
         justify-content: space-between;
-        padding-left: 50px;
-    }
-    a:hover {
-        color: rgb(182, 141, 53);
-        }
+        padding-left: 50px      }
         .bg-body-tertiary {
-            --bs-bg-opacity: 1;
-              /* background-color: rgba(var(--bs-tertiary-bg-rgb),var(--bs-bg-opacity))!important;*/
-        }
+            --bs-bg-opacity: 1;}
         .navbar-nav {
             --bs-nav-link-color: #040404;
             font-weight: bold;
-            --bs-nav-link-hover-color: rgb(209 173 95);
+            --bs-nav-link-hover-color: rgb(227, 184, 240);
+}
+#subtitulo{
+    margin-top: 3px;
+}
+.bbPeluche{
+    margin-left: 342px;
+    margin-right: 20px;
+    width: 62%;
+    height: 472px;
+}
+.h2home{
+    color: black;
+    font-weight: bold;
+    height: 34px;
+    font-size: 1.5rem;
+}
+.imgNenas {
+    margin-right: 11px;
+    padding: 2px;
+    padding: 2px;
+    margin-bottom: 3%;
+    margin-top: 0%;
+    margin-left: 45px;
+    width: 736px;
+}
+.imgNinos{
+    margin-right: 24px;
+    padding: 2px;
+    margin-bottom: 3%;
+    margin-top: 0%;
+    margin-left: 24px;
+    width: 736px;
 }
 }
