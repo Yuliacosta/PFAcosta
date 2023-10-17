@@ -1,0 +1,79 @@
+/* INICIA MAIN inicio/index */
+.main{
+    .cajaCards{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    #subtitulo{
+    background-color: rgba(209, 144, 82, 0.411);
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    font-size: 2rem;
+    }
+    
+    .bbPeluche{
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 90%;
+    }
+    
+    .h2home{
+    font-family: "Roboto-Light";
+    text-align: center;
+    color: rgb(158, 180, 178);
+    font-size: 20px;
+    height: 60px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding-top: 10px;
+    }
+    
+    .imgNenas{ /*seccion inicio*/
+    margin-right: 10px;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    margin-left: 17px;
+    }
+    .imgNinos{
+        margin-bottom: 3%;
+        margin-top: 1%;
+    }
+    /*Fin Main Inicio/index */
+    
+
+    /*Main bebes*/
+    .portadas{
+        width: 100%;
+        height: 500px;
+    }
+    .imgProductosb{
+        width: 100%;
+        margin-right:15px ;
+        margin-left: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 450px;
+        height: 500px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-color: black;
+        border-style: groove;
+    }
+    
+    .imgProductos{
+        width: 100%;
+        margin-right:15px ;
+        margin-left: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        height: 500px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-color: black;
+        border-style: groove;
+    }
+    /*Fin Main bebes*/
+}
