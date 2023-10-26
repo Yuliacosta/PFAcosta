@@ -30,11 +30,12 @@ header div nav {
   width: 100%;
 }
 header div nav div div a .logo {
-  width: 112px;
+  width: 250px;
 }
 header div nav div ul {
   list-style-type: none;
   padding-left: 50px;
+  margin-left: 100px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -45,7 +46,7 @@ header div nav div ul li {
   color: black;
   font-weight: bold;
   text-decoration: none;
-  justify-content: end;
+  justify-content: space-between;
   padding-left: 50px;
 }
 header div nav div ul li a {
@@ -55,12 +56,11 @@ header div nav div ul li a {
   justify-content: space-between;
   padding-left: 50px;
 }
-header div nav div ul li a .nav-link {
-  color: black;
-  font-weight: bold;
+header div nav div ul li a:hover {
+  --bs-nav-link-hover-color: rgb(227, 184, 240);
 }
-header div nav div ul li a .nav-link:hover {
-  color: rgb(227, 184, 240);
+header div nav div ul li a .logo {
+  width: 250px;
 }
 
 /* INICIA MAIN inicio/index */
@@ -141,30 +141,23 @@ footer {
   background-color: rgb(225, 226, 218);
   display: flex;
   width: 100%;
-  justify-content: center;
-  padding: 10px 0;
-  align-items: center;
 }
 footer div {
   display: inline;
-  width: 138px;
-  height: 48px;
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 footer div span {
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   flex-direction: row-reverse;
-  width: 70%;
-  margin-top: 23px;
-  font-size: 12px;
+  width: 90%;
+  margin-top: 80px;
 }
 
 @media screen and (max-width: 767px) {
   header {
     background-color: rgb(207, 118, 118);
     border-radius: 15px;
-  }
-  header div {
-    width: 100%;
   }
   header ul {
     list-style-type: none;
@@ -179,7 +172,8 @@ footer div span {
     padding-left: 10px;
   }
   header ul a .logo {
-    width: 112px;
+    width: 90px;
+    height: 87px;
   }
   .nav-link {
     color: black;
@@ -188,11 +182,11 @@ footer div span {
   .nav-link:hover {
     color: rgb(227, 184, 240);
   }
-  main .portadas {
+  .portadas {
     width: 100%;
     height: 200px;
   }
-  main .imgProductos {
+  .imgProductos {
     margin-right: 15px;
     margin-left: 15px;
     margin-top: 15px;
@@ -201,26 +195,25 @@ footer div span {
     height: 150px;
     padding-left: 15px;
     padding-right: 15px;
-    border-color: #b9d0e2;
+    border-color: black;
     border-style: groove;
   }
-  main button.navbar-toggler {
+  button.navbar-toggler {
     --bs-navbar-toggler-border-color: 0;
   }
-  main .carousel-item img {
+  .carousel-item img {
     width: 340px;
     height: 326.92;
   }
-  main #subtitulo {
+  #subtitulo {
     margin-top: 1%;
     margin-bottom: 1%;
     font-size: 1rem;
   }
-  main .bbPeluche {
+  .bbPeluche {
     margin-left: 17px;
-    width: 58%;
   }
-  main .h2home {
+  .h2home {
     font-family: "Roboto-Light";
     font-size: 13px;
     height: 38px;
@@ -229,152 +222,19 @@ footer div span {
     padding-top: 2px;
     color: black;
   }
-  main .imgNinios .imgNenas {
+  .imgNenas {
     margin-right: 11px;
-    margin-bottom: 16px;
-    margin-left: 22px;
-    width: 210px;
-  }
-  main .imgNinios .imgNinos {
-    margin-right: 11px;
-    margin-bottom: 10px;
-    margin-left: 22px;
-    width: 210px;
-  }
-  main form {
-    margin: 15px;
-  }
-  main form textarea {
-    display: inline-table;
-  }
-  main form input {
-    margin: 2px;
-    margin-left: 12px;
-  }
-  main iframe {
-    width: 300px;
-    height: 249px;
-    margin: 10px;
-  }
-  footer {
-    background-color: rgb(225, 226, 218);
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding: 5px 0;
-    align-items: center;
-    height: 35px;
-  }
-  footer div {
-    display: inline;
-    width: 100px;
-    height: 35px;
-  }
-  footer div a img {
-    width: 25px;
-  }
-  footer span {
-    margin-bottom: 4px;
-    flex-direction: row-reverse;
-    width: 100%;
-    font-size: 12px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  header {
-    background-color: rgb(207, 118, 118);
-    border-radius: 15px;
-  }
-  header div {
-    width: 100%;
-  }
-  header div .logo a img {
-    height: 100px;
-  }
-  header div .nav-link {
-    color: black;
-    font-weight: bold;
-  }
-  header div .nav-link:hover {
-    color: rgb(227, 184, 240);
-  }
-  main .portadas {
-    width: 100%;
-    height: 232px;
-    margin: 3px;
-  }
-  main #subtitulo {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    font-size: 1.3rem;
-  }
-  main div.bebe {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  main div.bebe .bbPeluche {
-    margin-left: 17px;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-  }
-  main .h2home {
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-    font-family: "Roboto-Light";
-    font-size: 13px;
-    height: 38px;
-    margin-top: 4.5px;
-    margin-bottom: 0.1px;
-    padding-top: 7px;
-    color: black;
-  }
-  main div.imgNinios {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-  }
-  main div.imgNinios .imgNenas {
-    margin-right: 21px;
-    margin-bottom: 18px;
+    margin-bottom: 3px;
     margin-top: 0%;
-    margin-left: 13px;
-    width: 400px;
+    margin-left: 22px;
+    width: 135px;
   }
-  main div.imgNinios .imgNinos {
+  .imgNinos {
     margin-right: 24px;
     padding: 2px;
-    margin-bottom: 18px;
-    width: 400px;
-  }
-  main .imgProductos {
-    margin-right: 15px;
+    margin-bottom: 3px;
     margin-left: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 270px;
-    height: 215px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-color: #b9d0e2;
-    border-style: groove;
-  }
-  main form {
-    margin: 15px;
-  }
-  main form textarea {
-    display: inline-table;
-  }
-  main form input {
-    margin: 2px;
-    margin-left: 12px;
-  }
-  main iframe {
-    width: 440px;
-    height: 262px;
-    margin: 10px;
+    width: 134px;
   }
   footer div {
     display: inline;
@@ -389,13 +249,46 @@ footer div span {
     font-size: 12px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   header {
     background-color: rgb(207, 118, 118);
     border-radius: 15px;
   }
   header div {
+    width: 297px;
+  }
+  .portadas {
     width: 100%;
+    height: 200px;
+  }
+  .imgProductos {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 150px;
+    height: 150px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-color: black;
+    border-style: groove;
+  }
+  .logo a img {
+    width: 80px;
+    height: 100px;
+  }
+  .nav-link {
+    color: black;
+    font-weight: bold;
+  }
+  .nav-link:hover {
+    color: rgb(227, 184, 240);
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    background-color: rgb(207, 118, 118);
+    border-radius: 15px;
   }
   header .logo {
     width: 150px;
@@ -407,7 +300,6 @@ footer div span {
     margin: 0;
     margin-left: 154px;
     flex-direction: row;
-    justify-content: flex-end;
   }
   ul {
     list-style-type: none;
@@ -426,48 +318,28 @@ footer div span {
     justify-content: space-between;
     padding-left: 50px;
   }
-  ul .nav-link {
+  .nav-link {
     color: black;
     font-weight: bold;
   }
-  ul .nav-link:hover {
+  .nav-link:hover {
     color: rgb(227, 184, 240);
   }
-  .portadas {
+  .portadas img {
     width: 100%;
-    height: 400px;
-    margin: 3px;
+    height: 200px;
   }
   .imgProductos {
     margin-right: 15px;
     margin-left: 15px;
     margin-top: 15px;
     margin-bottom: 15px;
-    width: 459px;
-    height: 444px;
-    border-color: #b9d0e2;
+    width: 150px;
+    height: 150px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-color: black;
     border-style: groove;
-  }
-  div.contacto {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-  div.contacto form {
-    width: 200px;
-    margin: 15px;
-  }
-  div.contacto form textarea {
-    display: inline-table;
-  }
-  div.contacto form input {
-    margin: 2px;
-    margin-left: 12px;
-  }
-  div.contacto iframe {
-    width: 440px;
-    height: 262px;
-    margin: 10px;
   }
   .logo a img {
     width: 80px;
@@ -476,73 +348,33 @@ footer div span {
   #subtitulo {
     margin-top: 3px;
   }
-  div.bebe {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  div.bebe .bbPeluche {
-    margin-left: 15px;
-    margin-right: 15px;
-    width: 70%;
-    height: 430px;
+  .bbPeluche {
+    margin-left: 342px;
+    margin-right: 20px;
+    width: 62%;
+    height: 472px;
   }
   .h2home {
-    display: flex;
-    justify-content: center;
     color: black;
     font-weight: bold;
     height: 34px;
     font-size: 1.5rem;
-    margin-top: 15px;
-    margin-bottom: 15px;
   }
-  div.imgNinios {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-  div.imgNinios .imgNenas {
+  .imgNenas {
     margin-right: 11px;
+    padding: 2px;
     padding: 2px;
     margin-bottom: 3%;
     margin-top: 0%;
     margin-left: 45px;
-    width: 700px;
+    width: 736px;
   }
-  div.imgNinios .imgNinos {
+  .imgNinos {
     margin-right: 24px;
     padding: 2px;
     margin-bottom: 3%;
     margin-top: 0%;
     margin-left: 24px;
-    width: 700px;
+    width: 736px;
   }
-  footer {
-    background-color: rgb(225, 226, 218);
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding: 5px 0;
-    align-items: center;
-    height: 65px;
-  }
-  footer div {
-    display: flex;
-    width: 100%;
-    height: 60px;
-  }
-  footer div a img {
-    width: 50px;
-  }
-  footer div span {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 4px;
-    width: 100%;
-    margin-top: 23px;
-    font-size: 12px;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

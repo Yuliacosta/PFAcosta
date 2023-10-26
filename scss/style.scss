@@ -1,5 +1,6 @@
-@import 'generales';
-@import 'header';
-@import 'main';
-@import 'footer';
+@import 'base/variables';
+@import 'base/generales';
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
 @import 'queries';
