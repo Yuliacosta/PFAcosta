@@ -2,24 +2,30 @@
     header{
         background-color: $color-backgraund;
         border-radius: 15px;
+        nav{
+            width: 100%;
         div{
             width: 100%;
-        }
-        ul{
-            list-style-type: none;
-            padding-left: 0px;
-            margin-left: 0px;
             a{
                 color: $color-a;
                 font-weight: bold;
                 text-decoration: none;
                 justify-content:center;
                 padding-left: 10px;
-                .logo{
+                img.logo{
                     width: 112px;
                 }
             }
         }
+        div{
+        ul{
+            align-items: end;
+            list-style-type: none;
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+    }
+    }
     }
     
 .nav-link{
@@ -30,6 +36,9 @@ font-weight: bold;
 }
 }
 main{
+    .carousel-item img {
+        height: 158px;
+    }
 .portadas{
             width: 100%;
             height: 200px;
@@ -47,9 +56,6 @@ main{
             border-style: groove;
         }
         
-button.navbar-toggler{
-            --bs-navbar-toggler-border-color: 0;
-        }
 .carousel-item img{
             width: 340px;
             height: 326.92;
@@ -59,33 +65,54 @@ button.navbar-toggler{
             margin-bottom: 1%;
             font-size: 1rem;
         }
-.bbPeluche {
-            margin-left: 17px;
-            width: 58%;
+
+div.bebe {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+            .bbPeluche{
+                    margin-left: 17px;
+                    width: 58%;
+                    }
         }
+    
+
 .h2home{
+    display: flex;
+    justify-content: center;
+    text-align: center;
             font-family: "Roboto-Light";
             font-size: 13px;
             height: 38px;
+            margin-left: 15px;
             margin-top: 0%;
             margin-bottom: 1%;
             padding-top: 2px;
             color: $color-a;
             }
-            .imgNinios{
-.imgNenas  {
-                margin-right: 11px;
+            div.NN{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+        .imgNenas  {
+            margin-right: 11px;
                 margin-bottom: 16px;
                 margin-left: 22px;
-                width: 210px;
+                width: 260px;
             }
-.imgNinos  {
+        }
+        div.NN{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        .imgNinos  {
                 margin-right: 11px;
                 margin-bottom: 10px;
                 margin-left: 22px;
-                width: 210px;
+                width: 260px;
             }
         }
+
         form{
             margin: 15px;
             textarea{
@@ -103,6 +130,7 @@ button.navbar-toggler{
         }
     }
 footer  { 
+    margin-left: 2px;
     background-color: rgb(225, 226, 218);
     display: flex;
     width: 100%;
@@ -112,7 +140,7 @@ footer  {
     height: 35px;
         div{
             display: inline;
-            width: 100px;
+            width: 100%;
             height: 35px;
             a{
                 img{
@@ -297,6 +325,7 @@ ul{
             }
             }
 }
+main{
         .portadas{
             width: 100%;
             height: 400px;
@@ -340,21 +369,21 @@ ul{
             height: 100px;
         }
     }
-} 
+}
 #subtitulo{
 margin-top: 3px;
 }
-div.bebe{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-.bbPeluche{
-margin-left: 15px;
-margin-right: 15px;
-width: 70%;
-height: 430px;
-}
-}
+        div.bebe{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+                .bbPeluche{
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    width: 70%;
+                    height: 430px;
+                    }
+        }
 .h2home{
     display: flex;
     justify-content: center;
@@ -374,8 +403,8 @@ margin-right: 11px;
 padding: 2px;
 margin-bottom: 3%;
 margin-top: 0%;
-margin-left: 45px;
-width: 700px;
+margin-left: 44px;
+width: 510px;
 }
 .imgNinos{
     margin-right: 24px;
@@ -383,8 +412,9 @@ width: 700px;
     margin-bottom: 3%;
     margin-top: 0%;
     margin-left: 24px;
-    width: 700px;
+    width: 510px;
     }
+}
 }
 footer{
     background-color: rgb(225, 226, 218);

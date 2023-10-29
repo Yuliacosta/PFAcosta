@@ -81,7 +81,7 @@ header div nav div ul li a .nav-link:hover {
   margin-bottom: 1%;
   font-size: 2rem;
 }
-.main .bbPeluche {
+.main div.bebe .bbPeluche {
   margin-left: 50px;
   margin-right: 50px;
   width: 90%;
@@ -163,23 +163,27 @@ footer div span {
     background-color: rgb(207, 118, 118);
     border-radius: 15px;
   }
-  header div {
+  header nav {
     width: 100%;
   }
-  header ul {
-    list-style-type: none;
-    padding-left: 0px;
-    margin-left: 0px;
+  header nav div {
+    width: 100%;
   }
-  header ul a {
+  header nav div a {
     color: black;
     font-weight: bold;
     text-decoration: none;
     justify-content: center;
     padding-left: 10px;
   }
-  header ul a .logo {
+  header nav div a img.logo {
     width: 112px;
+  }
+  header nav div ul {
+    align-items: end;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 0px;
   }
   .nav-link {
     color: black;
@@ -187,6 +191,9 @@ footer div span {
   }
   .nav-link:hover {
     color: rgb(227, 184, 240);
+  }
+  main .carousel-item img {
+    height: 158px;
   }
   main .portadas {
     width: 100%;
@@ -204,9 +211,6 @@ footer div span {
     border-color: #b9d0e2;
     border-style: groove;
   }
-  main button.navbar-toggler {
-    --bs-navbar-toggler-border-color: 0;
-  }
   main .carousel-item img {
     width: 340px;
     height: 326.92;
@@ -216,30 +220,49 @@ footer div span {
     margin-bottom: 1%;
     font-size: 1rem;
   }
-  main .bbPeluche {
+  main div.bebe {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main div.bebe .bbPeluche {
     margin-left: 17px;
     width: 58%;
   }
   main .h2home {
+    display: flex;
+    justify-content: center;
+    text-align: center;
     font-family: "Roboto-Light";
     font-size: 13px;
     height: 38px;
+    margin-left: 15px;
     margin-top: 0%;
     margin-bottom: 1%;
     padding-top: 2px;
     color: black;
   }
-  main .imgNinios .imgNenas {
+  main div.NN {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main div.NN .imgNenas {
     margin-right: 11px;
     margin-bottom: 16px;
     margin-left: 22px;
-    width: 210px;
+    width: 260px;
   }
-  main .imgNinios .imgNinos {
+  main div.NN {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main div.NN .imgNinos {
     margin-right: 11px;
     margin-bottom: 10px;
     margin-left: 22px;
-    width: 210px;
+    width: 260px;
   }
   main form {
     margin: 15px;
@@ -257,6 +280,7 @@ footer div span {
     margin: 10px;
   }
   footer {
+    margin-left: 2px;
     background-color: rgb(225, 226, 218);
     display: flex;
     width: 100%;
@@ -267,7 +291,7 @@ footer div span {
   }
   footer div {
     display: inline;
-    width: 100px;
+    width: 100%;
     height: 35px;
   }
   footer div a img {
@@ -433,12 +457,12 @@ footer div span {
   ul .nav-link:hover {
     color: rgb(227, 184, 240);
   }
-  .portadas {
+  main .portadas {
     width: 100%;
     height: 400px;
     margin: 3px;
   }
-  .imgProductos {
+  main .imgProductos {
     margin-right: 15px;
     margin-left: 15px;
     margin-top: 15px;
@@ -448,46 +472,46 @@ footer div span {
     border-color: #b9d0e2;
     border-style: groove;
   }
-  div.contacto {
+  main div.contacto {
     width: 100%;
     display: flex;
     justify-content: space-around;
   }
-  div.contacto form {
+  main div.contacto form {
     width: 200px;
     margin: 15px;
   }
-  div.contacto form textarea {
+  main div.contacto form textarea {
     display: inline-table;
   }
-  div.contacto form input {
+  main div.contacto form input {
     margin: 2px;
     margin-left: 12px;
   }
-  div.contacto iframe {
+  main div.contacto iframe {
     width: 440px;
     height: 262px;
     margin: 10px;
   }
-  .logo a img {
+  main .logo a img {
     width: 80px;
     height: 100px;
   }
-  #subtitulo {
+  main #subtitulo {
     margin-top: 3px;
   }
-  div.bebe {
+  main div.bebe {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  div.bebe .bbPeluche {
+  main div.bebe .bbPeluche {
     margin-left: 15px;
     margin-right: 15px;
     width: 70%;
     height: 430px;
   }
-  .h2home {
+  main .h2home {
     display: flex;
     justify-content: center;
     color: black;
@@ -497,26 +521,26 @@ footer div span {
     margin-top: 15px;
     margin-bottom: 15px;
   }
-  div.imgNinios {
+  main div.imgNinios {
     width: 100%;
     display: flex;
     justify-content: space-around;
   }
-  div.imgNinios .imgNenas {
+  main div.imgNinios .imgNenas {
     margin-right: 11px;
     padding: 2px;
     margin-bottom: 3%;
     margin-top: 0%;
-    margin-left: 45px;
-    width: 700px;
+    margin-left: 44px;
+    width: 510px;
   }
-  div.imgNinios .imgNinos {
+  main div.imgNinios .imgNinos {
     margin-right: 24px;
     padding: 2px;
     margin-bottom: 3%;
     margin-top: 0%;
     margin-left: 24px;
-    width: 700px;
+    width: 510px;
   }
   footer {
     background-color: rgb(225, 226, 218);
