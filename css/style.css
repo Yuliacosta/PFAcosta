@@ -155,7 +155,7 @@ footer div span {
   flex-direction: row-reverse;
   width: 70%;
   margin-top: 23px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 767px) {
@@ -193,23 +193,45 @@ footer div span {
     color: rgb(227, 184, 240);
   }
   main .carousel-item img {
-    height: 158px;
+    height: 180px;
   }
   main .portadas {
     width: 100%;
     height: 200px;
+    margin-left: 2px;
+  }
+  main .producto1 {
+    width: 300px;
   }
   main .imgProductos {
     margin-right: 15px;
-    margin-left: 15px;
+    margin-left: 4px;
     margin-top: 15px;
-    margin-bottom: 15px;
-    width: 150px;
-    height: 150px;
+    margin-bottom: 2px;
+    width: 235px;
+    height: 223px;
     padding-left: 15px;
     padding-right: 15px;
     border-color: #b9d0e2;
     border-style: groove;
+  }
+  main .descripcion {
+    font-weight: bold;
+  }
+  main .precio {
+    font-weight: bold;
+  }
+  main .boton {
+    margin-top: 3px;
+    margin-bottom: 22px;
+  }
+  main input {
+    margin: 3px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: #dae9ff;
+    color: rgb(4, 5, 5);
+    border-bottom-color: rgb(221, 223, 219);
   }
   main .carousel-item img {
     width: 340px;
@@ -227,7 +249,7 @@ footer div span {
   }
   main div.bebe .bbPeluche {
     margin-left: 17px;
-    width: 58%;
+    width: 82%;
   }
   main .h2home {
     display: flex;
@@ -242,23 +264,27 @@ footer div span {
     padding-top: 2px;
     color: black;
   }
-  main div.NN {
+  main div.ninios {
+    width: 100%;
+    text-align-last: center;
+  }
+  main div.ninios div.ninia {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  main div.NN .imgNenas {
+  main div.ninios div.ninia .imgNenas {
     margin-right: 11px;
     margin-bottom: 16px;
     margin-left: 22px;
     width: 260px;
   }
-  main div.NN {
+  main div.ninios div.ninio {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  main div.NN .imgNinos {
+  main div.ninios div.ninio .imgNinos {
     margin-right: 11px;
     margin-bottom: 10px;
     margin-left: 22px;
@@ -287,21 +313,23 @@ footer div span {
     justify-content: center;
     padding: 5px 0;
     align-items: center;
-    height: 35px;
+    height: 50px;
   }
   footer div {
-    display: inline;
+    display: flex;
     width: 100%;
     height: 35px;
+    text-align: center;
+    align-items: center;
   }
   footer div a img {
-    width: 25px;
+    width: 35px;
   }
   footer span {
     margin-bottom: 4px;
     flex-direction: row-reverse;
     width: 100%;
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -309,23 +337,78 @@ footer div span {
     background-color: rgb(207, 118, 118);
     border-radius: 15px;
   }
-  header div {
+  header nav {
     width: 100%;
   }
-  header div .logo a img {
-    height: 100px;
+  header nav div {
+    width: 100%;
   }
-  header div .nav-link {
+  header nav div a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    justify-content: center;
+    padding-left: 10px;
+  }
+  header nav div a img.logo {
+    width: 140px;
+  }
+  header nav div ul {
+    align-items: end;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  .nav-link {
     color: black;
     font-weight: bold;
   }
-  header div .nav-link:hover {
+  .nav-link:hover {
     color: rgb(227, 184, 240);
+  }
+  main .carousel-item img {
+    height: 230px;
   }
   main .portadas {
     width: 100%;
-    height: 232px;
+    height: 290px;
+  }
+  main .producto1 {
+    width: 300px;
+  }
+  main .imgProductos {
+    margin-right: 15px;
+    margin-left: 1px;
+    margin-top: 46px;
+    margin-bottom: 6px;
+    width: 328px;
+    height: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-color: #b9d0e2;
+    border-style: groove;
+  }
+  main .descripcion {
+    font-weight: bold;
+  }
+  main .precio {
+    font-weight: bold;
+  }
+  main .boton {
+    margin-top: 3px;
+    margin-bottom: 22px;
+  }
+  main input {
     margin: 3px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: #dae9ff;
+    color: rgb(4, 5, 5);
+    border-bottom-color: rgb(221, 223, 219);
+  }
+  main .carousel-item img {
+    width: 340px;
+    height: 326.92;
   }
   main #subtitulo {
     margin-top: 1%;
@@ -339,51 +422,39 @@ footer div span {
   }
   main div.bebe .bbPeluche {
     margin-left: 17px;
-    width: 80%;
-    display: flex;
-    justify-content: center;
+    width: 58%;
   }
   main .h2home {
     display: flex;
     justify-content: center;
+    text-align: center;
     font-weight: bold;
     font-family: "Roboto-Light";
     font-size: 13px;
     height: 38px;
-    margin-top: 4.5px;
-    margin-bottom: 0.1px;
-    padding-top: 7px;
+    margin-left: 15px;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    padding-top: 2px;
     color: black;
   }
-  main div.imgNinios {
+  main div.ninios {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
   }
-  main div.imgNinios .imgNenas {
+  main div.ninios .imgNenas {
+    margin-right: 11px;
+    margin-bottom: 18px;
+    margin-left: 22px;
+    width: 348px;
+  }
+  main div.ninios .imgNinos {
+    padding: 2px;
     margin-right: 21px;
     margin-bottom: 18px;
-    margin-top: 0%;
     margin-left: 13px;
-    width: 400px;
-  }
-  main div.imgNinios .imgNinos {
-    margin-right: 24px;
-    padding: 2px;
-    margin-bottom: 18px;
-    width: 400px;
-  }
-  main .imgProductos {
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 270px;
-    height: 215px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-color: #b9d0e2;
-    border-style: groove;
+    width: 348px;
   }
   main form {
     margin: 15px;
@@ -396,21 +467,34 @@ footer div span {
     margin-left: 12px;
   }
   main iframe {
-    width: 440px;
+    width: 400px;
     height: 262px;
     margin: 10px;
   }
-  footer div {
-    display: inline;
-    width: 138px;
-    height: 48px;
+  footer {
+    margin-left: 2px;
+    background-color: rgb(225, 226, 218);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 5px 0;
+    align-items: center;
+    height: 60px;
   }
-  footer div span {
+  footer div {
+    display: flex;
+    width: 100%;
+    height: 48px;
+    text-align: center;
+  }
+  footer div a img {
+    width: 52px;
+  }
+  footer span {
     margin-bottom: 4px;
     flex-direction: row-reverse;
     width: 70%;
-    margin-top: 23px;
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -418,87 +502,95 @@ footer div span {
     background-color: rgb(207, 118, 118);
     border-radius: 15px;
   }
-  header div {
+  header nav {
     width: 100%;
   }
-  header .logo {
-    width: 150px;
+  header nav div {
+    width: 100%;
   }
-  .navbar-expand-lg .navbar-nav {
-    flex-direction: row;
+  header nav div a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    justify-content: center;
+    padding-left: 10px;
   }
-  .navbar-expand-lg .navbar-nav {
-    margin: 0;
-    margin-left: 154px;
-    flex-direction: row;
-    justify-content: flex-end;
+  header nav div a img.logo {
+    width: 140px;
   }
-  ul {
+  header nav div ul {
+    align-items: end;
     list-style-type: none;
-    padding-left: 50px;
-    margin-left: 100px;
-    margin-bottom: 7rem;
+    padding-left: 0px;
+    margin-left: 0px;
   }
-  ul li {
-    display: inline;
-    margin: 10px;
+  header nav div ul li {
+    margin: 20px;
   }
-  ul li a {
+  header nav div ul li a {
     color: black;
     font-weight: bold;
     text-decoration: none;
     justify-content: space-between;
     padding-left: 50px;
   }
-  ul .nav-link {
+  .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: end;
+  }
+  .nav-link {
     color: black;
     font-weight: bold;
   }
-  ul .nav-link:hover {
+  .nav-link:hover {
     color: rgb(227, 184, 240);
+  }
+  main .carousel-item img {
+    height: 410px;
   }
   main .portadas {
     width: 100%;
-    height: 400px;
-    margin: 3px;
+    height: 418px;
+    margin-left: 2px;
+  }
+  main .producto1 {
+    width: 300px;
   }
   main .imgProductos {
-    margin-right: 15px;
-    margin-left: 15px;
     margin-top: 15px;
     margin-bottom: 15px;
-    width: 459px;
-    height: 444px;
+    width: 375px;
+    height: 440px;
     border-color: #b9d0e2;
     border-style: groove;
   }
-  main div.contacto {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+  main .descripcion {
+    font-weight: bold;
   }
-  main div.contacto form {
-    width: 200px;
-    margin: 15px;
+  main .precio {
+    font-weight: bold;
   }
-  main div.contacto form textarea {
-    display: inline-table;
+  main .boton {
+    margin-top: 3px;
+    margin-bottom: 22px;
   }
-  main div.contacto form input {
-    margin: 2px;
-    margin-left: 12px;
+  main input {
+    margin: 3px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: #dae9ff;
+    color: rgb(4, 5, 5);
+    border-bottom-color: rgb(221, 223, 219);
   }
-  main div.contacto iframe {
-    width: 440px;
-    height: 262px;
-    margin: 10px;
-  }
-  main .logo a img {
-    width: 80px;
-    height: 100px;
+  main .carousel-item img {
+    width: 340px;
+    height: 326.92;
   }
   main #subtitulo {
-    margin-top: 3px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 2rem;
   }
   main div.bebe {
     width: 100%;
@@ -506,41 +598,55 @@ footer div span {
     justify-content: center;
   }
   main div.bebe .bbPeluche {
-    margin-left: 15px;
-    margin-right: 15px;
-    width: 70%;
-    height: 430px;
+    margin-left: 17px;
+    width: 58%;
   }
   main .h2home {
     display: flex;
     justify-content: center;
-    color: black;
+    text-align: center;
     font-weight: bold;
-    height: 34px;
-    font-size: 1.5rem;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    font-family: "Roboto-Light";
+    font-size: 13px;
+    height: 38px;
+    margin-left: 15px;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    padding-top: 2px;
+    color: black;
   }
-  main div.imgNinios {
+  main div.ninios {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
   }
-  main div.imgNinios .imgNenas {
+  main div.ninios .imgNenas {
     margin-right: 11px;
-    padding: 2px;
-    margin-bottom: 3%;
-    margin-top: 0%;
-    margin-left: 44px;
-    width: 510px;
+    margin-bottom: 18px;
+    margin-left: 22px;
+    width: 400px;
   }
-  main div.imgNinios .imgNinos {
-    margin-right: 24px;
+  main div.ninios .imgNinos {
     padding: 2px;
-    margin-bottom: 3%;
-    margin-top: 0%;
-    margin-left: 24px;
-    width: 510px;
+    margin-right: 21px;
+    margin-bottom: 18px;
+    margin-left: 13px;
+    width: 400px;
+  }
+  main form {
+    margin: 15px;
+  }
+  main form textarea {
+    display: inline-table;
+  }
+  main form input {
+    margin: 2px;
+    margin-left: 12px;
+  }
+  main iframe {
+    width: 400px;
+    height: 262px;
+    margin: 10px;
   }
   footer {
     background-color: rgb(225, 226, 218);
@@ -565,7 +671,7 @@ footer div span {
     margin-bottom: 4px;
     width: 100%;
     margin-top: 23px;
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 

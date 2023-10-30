@@ -37,23 +37,47 @@ font-weight: bold;
 }
 main{
     .carousel-item img {
-        height: 158px;
+        height: 180px;
     }
 .portadas{
             width: 100%;
             height: 200px;
+            margin-left: 2px;
+        }
+        .producto1{
+            width: 300px;
         }
 .imgProductos{
             margin-right:15px ;
-            margin-left: 15px;
+            margin-left: 4px;
             margin-top: 15px;
-            margin-bottom: 15px;
-            width: 150px;
-            height: 150px;
+            margin-bottom: 2px;
+            width: 235px;
+            height: 223px;
             padding-left: 15px;
             padding-right: 15px;
             border-color: #b9d0e2;
             border-style: groove;
+        }
+        .descripcion{
+            font-weight: bold;
+        }
+        .precio{
+            font-weight: bold;
+        }
+
+        .boton{
+            margin-top: 3px;
+            margin-bottom: 22px;
+        }
+
+        input{
+            margin: 3px;
+            height: 35px;
+            border-radius: 8px;
+            background-color: #dae9ff;
+            color: rgb(4, 5, 5);
+            border-bottom-color: rgb(221 223 219);
         }
         
 .carousel-item img{
@@ -72,7 +96,7 @@ div.bebe {
         justify-content: center;
             .bbPeluche{
                     margin-left: 17px;
-                    width: 58%;
+                    width: 82%;
                     }
         }
     
@@ -90,27 +114,31 @@ div.bebe {
             padding-top: 2px;
             color: $color-a;
             }
-            div.NN{
+            div.ninios{
                 width: 100%;
-                display: flex;
-                justify-content: center;
-        .imgNenas  {
-            margin-right: 11px;
-                margin-bottom: 16px;
-                margin-left: 22px;
-                width: 260px;
-            }
-        }
-        div.NN{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        .imgNinos  {
+                text-align-last: center;
+                div.ninia{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    .imgNenas  {
+                        margin-right: 11px;
+                            margin-bottom: 16px;
+                            margin-left: 22px;
+                            width: 260px;
+                        }
+                }
+                div.ninio{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+            .imgNinos  {
                 margin-right: 11px;
                 margin-bottom: 10px;
                 margin-left: 22px;
                 width: 260px;
             }
+        }
         }
 
         form{
@@ -137,14 +165,16 @@ footer  {
     justify-content: center;
     padding: 5px 0;
     align-items: center;
-    height: 35px;
+    height: 50px;
         div{
-            display: inline;
+            display: flex;
             width: 100%;
             height: 35px;
+            text-align: center;
+            align-items: center;
             a{
                 img{
-                    width: 25px;
+                    width: 35px;
                 }
             }
                 }
@@ -152,7 +182,7 @@ footer  {
                 margin-bottom: 4px;
                 flex-direction: row-reverse;
                 width: 100%;
-                font-size: 12px;
+                font-size: 11px;
             }
         }
 
@@ -162,191 +192,140 @@ footer  {
     header{
         background-color: $color-backgraund;
         border-radius: 15px;
+        nav{
+            width: 100%;
         div{
-        width: 100%;
-        .logo{
+            width: 100%;
             a{
-            img{
-                height: 100px;
+                color: $color-a;
+                font-weight: bold;
+                text-decoration: none;
+                justify-content:center;
+                padding-left: 10px;
+                img.logo{
+                    width: 140px;
+                }
             }
         }
-    }
-    .nav-link{
-        color: $color-a;
-        font-weight:bold;
-        &:hover{
-            color: $color-hover;
+        div{
+        ul{
+            align-items: end;
+            list-style-type: none;
+            padding-left: 0px;
+            margin-left: 0px;
         }
-        }
     }
     }
+    }
+    
+.nav-link{
+color: $color-a;
+font-weight: bold;
+&:hover{
+    color: $color-hover;
+}
+}
 
-    main{
-        .portadas{
+main{
+    .carousel-item img {
+        height: 230px;
+    }
+.portadas{
             width: 100%;
-            height: 232px;
-            margin: 3px;
+            height: 290px;
         }
-        #subtitulo {
+        .producto1{
+            width: 300px;
+        }
+.imgProductos{
+            margin-right:15px ;
+            margin-left: 1px;
+            margin-top: 46px;
+            margin-bottom: 6px;
+            width: 328px;
+            height: 300px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-color: #b9d0e2;
+            border-style: groove;
+        }
+        .descripcion{
+            font-weight: bold;
+        }
+        .precio{
+            font-weight: bold;
+        }
+
+        .boton{
+            margin-top: 3px;
+            margin-bottom: 22px;
+        }
+
+        input{
+            margin: 3px;
+            height: 35px;
+            border-radius: 8px;
+            background-color: #dae9ff;
+            color: rgb(4, 5, 5);
+            border-bottom-color: rgb(221 223 219);
+        }
+        
+.carousel-item img{
+            width: 340px;
+            height: 326.92;
+        }
+#subtitulo {
             margin-top: 1%;
             margin-bottom: 1%;
             font-size: 1.3rem;
         }
-        div.bebe{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        .bbPeluche {
-            margin-left: 17px;
-                width: 80%;
-                display: flex;
-                justify-content: center;
-        }
-    }
 
-        .h2home{
-            display: flex;
-            justify-content: center;
-            font-weight: bold;
+div.bebe {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+            .bbPeluche{
+                    margin-left: 17px;
+                    width: 58%;
+                    }
+        }
+    
+
+.h2home{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
             font-family: "Roboto-Light";
             font-size: 13px;
             height: 38px;
-            margin-top: 4.5px;
-            margin-bottom: 0.1px;
-            padding-top: 7px;
+            margin-left: 15px;
+            margin-top: 1%;
+            margin-bottom: 0%;
+            padding-top: 2px;
             color: $color-a;
             }
-            div.imgNinios{
+            div.ninios{
                 width: 100%;
                 display: flex;
-                justify-content: flex-start;
-                .imgNenas {
+                justify-content: center;
+        .imgNenas  {
+            margin-right: 11px;
+                margin-bottom: 18px;
+                margin-left: 22px;
+                width: 348px;
+            }
+            .imgNinos  {
+                padding: 2px;
                     margin-right: 21px;
                     margin-bottom: 18px;
-                    margin-top: 0%;
                     margin-left: 13px;
-                    width: 400px;
+                    width: 348px;
                 }
-                .imgNinos{
-                    margin-right: 24px;
-                    padding: 2px;
-                    margin-bottom: 18px;
-                    width: 400px;
-                }
-            }
+        }
 
-                .imgProductos{
-                    margin-right:15px ;
-                    margin-left: 15px;
-                    margin-top: 15px;
-                    margin-bottom: 15px;
-                    width: 270px;
-                    height: 215px;
-                    padding-left: 15px;
-                    padding-right: 15px;
-                    border-color: #b9d0e2;
-                    border-style: groove;
-                }
-                form{
-                    margin: 15px;
-                    textarea{
-                        display: inline-table;
-                    }
-                    input{
-                        margin: 2px;
-                        margin-left: 12px;
-                    }
-                }
-                iframe{
-                    width: 440px;
-                    height: 262px;
-                    margin: 10px;
-                }
-        }
-            footer {
-            div {
-                display: inline;
-                width: 138px;
-                height: 48px;
-                span {
-                    margin-bottom: 4px;
-                    flex-direction: row-reverse;
-                    width: 70%;
-                    margin-top: 23px;
-                    font-size: 12px;
-                }
-            }
-        }
-}
-@media screen and (min-width:1024px){
 
-header{
-    background-color: $color-backgraund;
-    border-radius: 15px;
-    div{
-        width: 100%;
-    }
-    .logo{
-        width: 150px;
-
-    }
-}
-.navbar-expand-lg .navbar-nav {
-    flex-direction: row;
-}
-.navbar-expand-lg .navbar-nav {
-    margin: 0;
-    margin-left: 154px;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-ul{
-    list-style-type: none;
-    padding-left: 50px;
-    margin-left: 100px;
-    margin-bottom: 7rem;
-    li{
-        display: inline;
-        margin: 10px;
-        a{
-            color: $color-a;
-            font-weight: bold;
-            text-decoration: none;
-            justify-content: space-between;
-            padding-left: 50px;
-        }
-    }
-        .nav-link{
-            color: $color-a;
-            font-weight: bold;
-            &:hover{
-                color: $color-hover;
-            }
-            }
-}
-main{
-        .portadas{
-            width: 100%;
-            height: 400px;
-            margin: 3px;
-        }
-        .imgProductos{
-            margin-right:15px;
-            margin-left: 15px;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            width: 459px;
-            height: 444px;
-            border-color: #b9d0e2;
-            border-style: groove;
-        }
-        div.contacto{
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
         form{
-            width: 200px;
             margin: 15px;
             textarea{
                 display: inline-table;
@@ -357,65 +336,206 @@ main{
             }
         }
         iframe{
-            width: 440px;
+            width: 400px;
             height: 262px;
             margin: 10px;
         }
     }
-        .logo{
-        a{
-        img{
-            width: 80px;
-            height: 100px;
+    footer  { 
+        margin-left: 2px;
+        background-color: rgb(225, 226, 218);
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 5px 0;
+        align-items: center;
+        height: 60px;
+            div{
+                display: flex;
+                width: 100%;
+                height: 48px;
+                text-align: center;
+                a{
+                    img{
+                        width: 52px;
+                    }
+                }
+                    }
+                span{
+                    margin-bottom: 4px;
+                    flex-direction: row-reverse;
+                    width: 70%;
+                    font-size: 15px;
+                }
+            }
+    
+    }
+@media screen and (min-width:1024px){
+
+    header{
+        background-color: $color-backgraund;
+        border-radius: 15px;
+        nav{
+            width: 100%;
+        div{
+            width: 100%;
+            a{
+                color: $color-a;
+                font-weight: bold;
+                text-decoration: none;
+                justify-content:center;
+                padding-left: 10px;
+                img.logo{
+                    width: 140px;
+                }
+            }
+        }
+        div{
+        ul{
+            align-items: end;
+            list-style-type: none;
+            padding-left: 0px;
+            margin-left: 0px;
+            li{
+                margin: 20px;
+                a{
+                    color: $color-a;
+                    font-weight: bold;
+                    text-decoration: none;
+                    justify-content: space-between;
+                    padding-left: 50px;
+                }
+            }
         }
     }
+    }
+    }
+    
+    .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+        justify-content: end;
+    }
+.nav-link{
+color: $color-a;
+font-weight: bold;
+&:hover{
+    color: $color-hover;
 }
-#subtitulo{
-margin-top: 3px;
+
 }
-        div.bebe{
+main{
+    .carousel-item img {
+        height: 410px;
+    }
+.portadas{
             width: 100%;
-            display: flex;
-            justify-content: center;
-                .bbPeluche{
-                    margin-left: 15px;
-                    margin-right: 15px;
-                    width: 70%;
-                    height: 430px;
+            height: 418px;
+            margin-left: 2px;
+        }
+        .producto1{
+            width: 300px;
+        }
+.imgProductos{
+            margin-top: 15px;
+            margin-bottom: 15px;
+            width: 375px;
+            height: 440px;
+            border-color: #b9d0e2;
+            border-style: groove;
+        }
+        .descripcion{
+            font-weight: bold;
+        }
+        .precio{
+            font-weight: bold;
+        }
+
+        .boton{
+            margin-top: 3px;
+            margin-bottom: 22px;
+        }
+
+        input{
+            margin: 3px;
+            height: 35px;
+            border-radius: 8px;
+            background-color: #dae9ff;
+            color: rgb(4, 5, 5);
+            border-bottom-color: rgb(221 223 219);
+        }
+
+.carousel-item img{
+            width: 340px;
+            height: 326.92;
+        }
+#subtitulo {
+            margin-top: 1%;
+            margin-bottom: 1%;
+            font-size: 2rem;
+        }
+
+div.bebe {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+            .bbPeluche{
+                    margin-left: 17px;
+                    width: 58%;
                     }
         }
+    
+
 .h2home{
     display: flex;
     justify-content: center;
-color: $color-a;
-font-weight: bold;
-height: 34px;
-font-size: 1.5rem;
-margin-top: 15px;
-margin-bottom: 15px;
-}
-div.imgNinios{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-.imgNenas {
-margin-right: 11px;
-padding: 2px;
-margin-bottom: 3%;
-margin-top: 0%;
-margin-left: 44px;
-width: 510px;
-}
-.imgNinos{
-    margin-right: 24px;
-    padding: 2px;
-    margin-bottom: 3%;
-    margin-top: 0%;
-    margin-left: 24px;
-    width: 510px;
+    text-align: center;
+    font-weight: bold;
+            font-family: "Roboto-Light";
+            font-size: 13px;
+            height: 38px;
+            margin-left: 15px;
+            margin-top: 0%;
+            margin-bottom: 1%;
+            padding-top: 2px;
+            color: $color-a;
+            }
+            div.ninios{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+        .imgNenas  {
+            margin-right: 11px;
+                margin-bottom: 18px;
+                margin-left: 22px;
+                width: 400px;
+            }
+            .imgNinos  {
+                padding: 2px;
+                    margin-right: 21px;
+                    margin-bottom: 18px;
+                    margin-left: 13px;
+                    width: 400px;
+                }
+        }
+
+
+        form{
+            margin: 15px;
+            textarea{
+                display: inline-table;
+            }
+            input{
+                margin: 2px;
+                margin-left: 12px;
+            }
+        }
+        iframe{
+            width: 400px;
+            height: 262px;
+            margin: 10px;
+        }
     }
-}
-}
 footer{
     background-color: rgb(225, 226, 218);
 display: flex;
@@ -428,6 +548,7 @@ div {
     display: flex;
     width: 100%;
     height: 60px;
+    
     a{
         img{
             width: 50px;
@@ -439,7 +560,7 @@ div {
         margin-bottom: 4px;
         width: 100%;
         margin-top: 23px;
-        font-size: 12px;
+        font-size: 15px;
     }
 }
 }
