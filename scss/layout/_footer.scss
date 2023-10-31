@@ -11,10 +11,12 @@ div {
     width: 138px;
     height: 48px;
     span {
+        display: flex;
+        align-items: center;
         margin-bottom: 4px;
         flex-direction: row-reverse;
         width: 70%;
-        margin-top: 23px;
+        margin-top: 10px;
         font-size: 14px;
     }
 }
