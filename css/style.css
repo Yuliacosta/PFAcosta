@@ -509,6 +509,7 @@ footer div span {
 }
 @media screen and (min-width: 1024px) {
   header {
+    position: fixed;
     background-color: rgb(207, 118, 118);
     border-radius: 15px;
   }
@@ -598,6 +599,8 @@ footer div span {
     height: 326.92;
   }
   main #subtitulo {
+    font-family: "Roboto-Light";
+    font-weight: bold;
     margin-top: 1%;
     margin-bottom: 1%;
     font-size: 2rem;
@@ -617,10 +620,10 @@ footer div span {
     text-align: center;
     font-weight: bold;
     font-family: "Roboto-Light";
-    font-size: 13px;
+    font-size: 24px;
     height: 38px;
     margin-left: 15px;
-    margin-top: 0%;
+    margin-top: 2%;
     margin-bottom: 1%;
     padding-top: 2px;
     color: black;

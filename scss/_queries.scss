@@ -382,6 +382,7 @@ div.bebe {
 @media screen and (min-width:1024px){
 
     header{
+        position: fixed;
         background-color: $color-backgraund;
         border-radius: 15px;
         nav{
@@ -445,6 +446,7 @@ main{
         .producto1{
             width: 300px;
         }
+
 .imgProductos{
             margin-top: 15px;
             margin-bottom: 15px;
@@ -479,6 +481,8 @@ main{
             height: 326.92;
         }
 #subtitulo {
+    font-family: "Roboto-Light";
+    font-weight: bold;
             margin-top: 1%;
             margin-bottom: 1%;
             font-size: 2rem;
@@ -501,10 +505,10 @@ div.bebe {
     text-align: center;
     font-weight: bold;
             font-family: "Roboto-Light";
-            font-size: 13px;
+            font-size: 24px;
             height: 38px;
             margin-left: 15px;
-            margin-top: 0%;
+            margin-top: 2%;
             margin-bottom: 1%;
             padding-top: 2px;
             color: $color-a;
