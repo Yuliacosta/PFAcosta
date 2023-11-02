@@ -4,6 +4,7 @@
         border-radius: 15px;
         nav{
             width: 100%;
+            height: 90px;
         div{
             width: 100%;
             a{
@@ -13,7 +14,8 @@
                 justify-content:center;
                 padding-left: 10px;
                 img.logo{
-                    width: 112px;
+                    width: 100px;
+                    height: 76px;
                 }
             }
         }
@@ -84,6 +86,11 @@ main{
         .boton{
             margin-top: 3px;
             margin-bottom: 22px;
+        }
+        .contacto{
+            width: 100%;
+            display: inline;
+            align-items: center;
         }
 
         input{
@@ -211,6 +218,7 @@ footer  {
         border-radius: 15px;
         nav{
             width: 100%;
+            height: 115px;
         div{
             width: 100%;
             a{
@@ -220,7 +228,9 @@ footer  {
                 justify-content:center;
                 padding-left: 10px;
                 img.logo{
-                    width: 140px;
+                    width: 158px;
+                    border-radius: 20px;
+                    height: 107px;
                 }
             }
         }
@@ -348,8 +358,12 @@ div.bebe {
                     width: 348px;
                 }
         }
-
-
+        .contacto{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
         form{
             margin: 15px;
             textarea{
@@ -398,11 +412,11 @@ div.bebe {
 @media screen and (min-width:1024px){
 
     header{
-        position: fixed;
         background-color: $color-backgraund;
         border-radius: 15px;
         nav{
             width: 100%;
+            height: 115px;
         div{
             width: 100%;
             a{
@@ -412,7 +426,9 @@ div.bebe {
                 justify-content:center;
                 padding-left: 10px;
                 img.logo{
-                    width: 140px;
+                    width: 156px;
+                    height: 113px;
+                    border-radius: 20px;
                 }
             }
         }
@@ -557,8 +573,12 @@ div.bebe {
                     width: 400px;
                 }
         }
-
-
+        .contacto{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
         form{
             margin: 15px;
             textarea{
@@ -570,8 +590,8 @@ div.bebe {
             }
         }
         iframe{
-            width: 400px;
-            height: 262px;
+            width: 457px;
+            height: 315px;
             margin: 10px;
         }
     }
