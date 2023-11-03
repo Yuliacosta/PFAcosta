@@ -191,6 +191,9 @@ footer div span {
     padding-left: 0px;
     margin-left: 0px;
   }
+  header nav div ul li {
+    background-color: whitesmoke;
+  }
   .nav-link {
     color: black;
     font-weight: bold;
@@ -205,6 +208,40 @@ footer div span {
     width: 100%;
     height: 200px;
     margin-left: 2px;
+  }
+  main .facilitadores {
+    width: 100%;
+    height: 118px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  main .facilitadores .envio-img {
+    width: 45px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 5px;
+  }
+  main .facilitadores .oferta-img {
+    width: 40px;
+    margin-left: 3px;
+    margin-bottom: 5px;
+  }
+  main .facilitadores .reloj-img {
+    width: 37px;
+    margin-left: 34px;
+    margin-bottom: 5px;
+  }
+  main .facilitadores .facilitador-titulo {
+    font-weight: bold;
+    font-family: math;
+    color: #495057;
+    font-size: 11px;
+    text-align: center;
+  }
+  main .facilitadores .facilitador-texto {
+    font-size: 10px;
+    text-align: center;
   }
   main .descripciones {
     text-align: center;
@@ -449,6 +486,38 @@ footer div span {
     width: 340px;
     height: 326.92;
   }
+  main .facilitadores {
+    width: 100%;
+    height: 135px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 34px;
+    align-items: center;
+  }
+  main .facilitadores .envio-img {
+    width: 50px;
+    margin-left: 62px;
+    margin-right: 60px;
+    margin-bottom: 5px;
+  }
+  main .facilitadores .oferta-img {
+    width: 46px;
+    margin-left: 65px;
+    right: 60px;
+    margin-bottom: 5px;
+  }
+  main .facilitadores .reloj-img {
+    width: 46px;
+    margin-left: 63px;
+    margin-right: 60px;
+    margin-bottom: 5px;
+  }
+  main .facilitadores .facilitador-titulo {
+    font-weight: bold;
+    font-family: math;
+    color: #495057;
+    font-size: 18px;
+  }
   main #subtitulo {
     margin-top: 1%;
     margin-bottom: 1%;
@@ -642,6 +711,29 @@ footer div span {
   main .carousel-item img {
     width: 340px;
     height: 326.92;
+  }
+  main .facilitadores {
+    width: 100%;
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    margin-top: 34px;
+    align-items: center;
+  }
+  main .facilitadores .envio-img {
+    width: 83px;
+  }
+  main .facilitadores .oferta-img {
+    width: 46px;
+  }
+  main .facilitadores .reloj-img {
+    width: 46px;
+  }
+  main .facilitadores .facilitador-titulo {
+    font-weight: bold;
+    font-family: math;
+    color: #495057;
+    font-size: 18px;
   }
   main #subtitulo {
     font-family: "Roboto-Light";
